@@ -1,0 +1,1 @@
+export const ADD_ENTRY_API_URL = "/api/add"

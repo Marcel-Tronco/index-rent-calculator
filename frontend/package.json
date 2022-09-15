@@ -1,0 +1,40 @@
+{
+  "name": "mietspiegel-fe",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
+    "@fontsource/roboto": "^4.5.2",
+    "@fontsource/teko": "^4.5.1",
+    "@mui/icons-material": "^5.2.5",
+    "@mui/material": "^5.2.7",
+    "markdown-to-jsx": "^7.1.6",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "^5.0.0"
+  },
+  "scripts": {
+    "analyze": "source-map-explorer 'build/static/js/*.js'",
+    "start": "react-scripts start",
+    "build": "react-scripts build && rm -rf /home/agrajag/Computer_science/Mietspiegel/mietspiegel-be/dist/* && cp -r /home/agrajag/Computer_science/Mietspiegel/mietspiegel-fe/build/* /home/agrajag/Computer_science/Mietspiegel/mietspiegel-be/dist && rm -rf /home/agrajag/Computer_science/Mietspiegel/frontend_test/dist/* && cp -r /home/agrajag/Computer_science/Mietspiegel/mietspiegel-fe/build/* /home/agrajag/Computer_science/Mietspiegel/frontend_test/dist",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "jest": "^27.4.7",
+    "source-map-explorer": "^2.5.2"
+  }
+}

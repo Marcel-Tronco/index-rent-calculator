@@ -1,0 +1,32 @@
+{
+  "name": "mietspiegel-be",
+  "version": "0.0.0",
+  "description": "Backend for the Mietspiegel app",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_ENV=test jest --verbose --runInBand",
+    "start": "NODE_ENV=production node index.js",
+    "dev": "NODE_ENV=development nodemon index.js",
+    "lint": "eslint ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "better-sqlite3": "^7.4.6",
+    "express": "^4.17.2",
+    "express-slow-down": "^1.4.0",
+    "http": "^0.0.1-security",
+    "sql-escape-string": "^1.1.0"
+  },
+  "devDependencies": {
+    "dotenv": "^10.0.0",
+    "eslint": "^8.6.0",
+    "eslint-plugin-jest": "^25.3.4",
+    "jest": "^27.4.7",
+    "nodemon": "^2.0.15",
+    "supertest": "^6.1.6"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}
